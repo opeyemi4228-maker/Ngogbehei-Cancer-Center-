@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    html, body, *, *::before, *::after {
+        font-family: var(--font-montserrat), sans-serif !important;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
