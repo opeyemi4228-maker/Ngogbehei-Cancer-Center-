@@ -2,7 +2,7 @@
 
 /**
  * @file app/about/page.jsx
- * @project Ngogbehei Cancer Center — About Page
+ * @project Ngogbehei Cancer Center - About Page
  *
  * Production-ready. SEO-optimized. Fully accessible.
  *
@@ -56,7 +56,7 @@ function OrganizationSchema() {
     alternateName: "NCC",
     legalName: "Marcel Ngogbehei Center for Cancer Education & Care",
     description:
-      "A UK-registered nonprofit empowering rural African communities through cancer education, early detection, and accessible pathways to care.",
+      "A UK registered nonprofit empowering rural African communities through cancer education, early detection, and accessible pathways to care.",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     foundingDate: "2021",
@@ -397,8 +397,8 @@ function Hero() {
             transition={{ delay: 0.44, duration: 0.7 }}
             className="font-montserrat text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
           >
-            A UK-registered nonprofit closing the deadliest gap in African
-            healthcare — bringing cancer education, early detection, and
+            A UK registered nonprofit closing the deadliest gap in African
+            healthcare, bringing cancer education, early detection, and
             patient navigation directly to the rural communities that need it
             most.
           </motion.p>
@@ -566,8 +566,8 @@ function Origin() {
 
             <div className="space-y-4 mb-10">
               {[
-                "The Marcel Ngogbehei Center for Cancer Education & Care was established after a deeply personal encounter with the devastating cost of late cancer diagnosis in Africa. Marcel watched loved ones lose their battle — not because treatment was impossible, but because nobody caught it in time.",
-                "In underserved African communities, the word 'cancer' still carries a death sentence — not from biology, but from information gaps, poverty, and inaccessible healthcare. NCC was built to change that equation permanently, one community at a time.",
+                "The Marcel Ngogbehei Center for Cancer Education & Care was established after a deeply personal encounter with the devastating cost of late cancer diagnosis in Africa. Marcel watched loved ones lose their battle, not because treatment was impossible, but because nobody caught it in time.",
+                "In underserved African communities, the word 'cancer' still carries a death sentence, not from biology, but from information gaps, poverty, and inaccessible healthcare. NCC was built to change that equation permanently, one community at a time.",
                 "Registered in England & Wales, with core operations rooted in Nigeria and beyond, NCC deploys mobile awareness units, free screenings, and patient navigation support directly into the rural communities that need it most.",
               ].map((p, i) => (
                 <motion.p
@@ -627,7 +627,7 @@ function Stats() {
     { num: 890, suf: "+", label: "Free Screenings", sub: "Conducted to date" },
     { num: 210, suf: "+", label: "Patients Supported", sub: "Through navigation" },
     { num: 12, suf: "+", label: "Communities", sub: "Directly reached" },
-    { num: 100, suf: "%", label: "Nonprofit", sub: "UK-registered charity" },
+    { num: 100, suf: "%", label: "Nonprofit", sub: "UK registered charity" },
   ];
   return (
     <section
@@ -687,17 +687,17 @@ function MVV() {
     {
       label: "Mission",
       color: "#059669",
-      text: "To empower underserved communities — especially in African rural areas — through cancer education, early detection awareness, and accessible pathways to care and support. Because knowledge saves lives, and every person deserves a fighting chance against cancer, no matter where they live.",
+      text: "To empower underserved communities, especially in African rural areas, through cancer education, early detection awareness, and accessible pathways to care and support. Because knowledge saves lives, and every person deserves a fighting chance against cancer, no matter where they live.",
     },
     {
       label: "Vision",
       color: "#0284c7",
-      text: "A world where cancer is no longer a death sentence in rural communities — because education and access always come first. An Africa where geography and income never determine who survives.",
+      text: "A world where cancer is no longer a death sentence in rural communities, because education and access always come first. An Africa where geography and income never determine who survives.",
     },
     {
       label: "Values",
       color: "#7c3aed",
-      text: "Dignity in every encounter. Radical access over convenience. Community first. Evidence-based action. Relentless hope in the face of overwhelming odds. Because justice is at the heart of every life we fight for.",
+      text: "Dignity in every encounter. Radical access over convenience. Community first. Evidence based action. Relentless hope in the face of overwhelming odds. Because justice is at the heart of every life we fight for.",
     },
   ];
   return (
@@ -794,7 +794,7 @@ function Pillars() {
       title: "Community Education & Awareness",
       color: "#059669",
       desc:
-        "Workshops in rural areas on cancer symptoms, risk factors, myths, and lifestyle changes. We partner with local schools, churches, and community centres — distributing materials in local languages.",
+        "Workshops in rural areas on cancer symptoms, risk factors, myths, and lifestyle changes. We partner with local schools, churches, and community centres, distributing materials in local languages.",
       stat: "3,400+",
       statLbl: "Individuals reached",
     },
@@ -803,7 +803,7 @@ function Pillars() {
       title: "Screening & Early Detection",
       color: "#0284c7",
       desc:
-        "Mobile screening units and pop-up clinics bringing breast, cervical, and prostate screenings directly into communities. We train health volunteers in symptom spotting and referral pathways.",
+        "Mobile screening units and pop up clinics bringing breast, cervical, and prostate screenings directly into communities. We train health volunteers in symptom spotting and referral pathways.",
       stat: "890+",
       statLbl: "Free screenings",
     },
@@ -812,7 +812,7 @@ function Pillars() {
       title: "Access to Care & Navigation",
       color: "#7c3aed",
       desc:
-        "We walk beside every patient — connecting them to hospitals, specialists, and treatment. Financial micro-grants and transport support ensure poverty is never a barrier to survival.",
+        "We walk beside every patient, connecting them to hospitals, specialists, and treatment. Financial micro grants and transport support ensure poverty is never a barrier to survival.",
       stat: "210+",
       statLbl: "Patients guided",
     },
@@ -821,7 +821,7 @@ function Pillars() {
       title: "Survivor & Caregiver Support",
       color: "#0891b2",
       desc:
-        "Peer support groups for survivors and caregivers, mental health programmes post-diagnosis, and survivor story campaigns that reduce stigma and inspire communities to act early.",
+        "Peer support groups for survivors and caregivers, mental health programmes post diagnosis, and survivor story campaigns that reduce stigma and inspire communities to act early.",
       stat: "5+",
       statLbl: "Nations active",
     },
@@ -871,7 +871,7 @@ function Pillars() {
             className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-sm"
           >
             Everything NCC does flows from one belief: that early action saves
-            lives — and that no rural community should be left behind.
+            lives, and that no rural community should be left behind.
           </motion.p>
         </div>
 
@@ -958,7 +958,7 @@ function Testimonial() {
               style={{ letterSpacing: "-0.025em" }}
             >
               &ldquo;When they told me it was caught early, I didn&apos;t cry
-              from fear — I cried from relief. The NCC team was there every
+              from fear, I cried from relief. The NCC team was there every
               single step of the way.&rdquo;
             </p>
           </blockquote>
@@ -1045,7 +1045,7 @@ function CTA() {
             >
               Don&apos;t just read
               <br />
-              our story —
+              our story
               <br />
               <span style={{ color: "#10b981" }}>help write it.</span>
             </motion.h2>
@@ -1055,8 +1055,8 @@ function CTA() {
               transition={{ delay: 0.16, duration: 0.6 }}
               className="font-montserrat text-[16px] text-white/85 leading-relaxed max-w-md"
             >
-              Whether you give, volunteer, partner, or simply spread the word
-              — every action moves us closer to a cancer-aware Africa where
+              Whether you give, volunteer, partner, or simply spread the word,
+              every action moves us closer to a cancer aware Africa where
               no one is left behind because of where they live.
             </motion.p>
           </div>

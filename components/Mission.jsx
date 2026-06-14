@@ -85,7 +85,7 @@ const CARDS = [
     accent: "#0284c7",
     img: M3,
     imgAlt: "African health worker conducting a free cancer screening",
-    body: "Free early detection drives bringing clinical-grade screening directly into rural and peri-urban areas.",
+    body: "Free early detection drives bringing clinical grade screening directly into rural and peri urban areas.",
     href: "/impact/screenings",
   },
   {
@@ -296,7 +296,7 @@ export default function ImpactSection() {
                 className="font-montserrat text-base text-slate-500 leading-relaxed max-w-xl"
               >
                 Our pilot programmes are already delivering results across
-                Nigeria and West Africa. Five pillars of measurable impact —
+                Nigeria and West Africa. Five pillars of measurable impact -
                 and the mission that drives us.
               </motion.p>
             </div>
@@ -408,7 +408,7 @@ export default function ImpactSection() {
               }}
               className="flex-shrink-0 snap-start group w-[clamp(300px,30vw,400px)]"
             >
-              {/* Card image container — relative + aspect-ratio so fill works */}
+              {/* Card image container - relative + aspect-ratio so fill works */}
               <div className="relative overflow-hidden rounded-[20px] aspect-[3/4] bg-slate-900">
                 <Image
                   src={card.img}

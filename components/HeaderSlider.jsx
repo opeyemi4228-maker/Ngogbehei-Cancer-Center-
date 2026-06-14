@@ -3,9 +3,9 @@
 /**
  * @file HeroSection.jsx
  * @project Ngogbehei Cancer Center (NCC)
- * @description Production-ready cinematic hero — rebuilt for clarity, a11y & responsiveness.
+ * @description Production-ready cinematic hero - rebuilt for clarity, a11y & responsiveness.
  *
- *   • 4 NCC slides — Education, Free Screenings, Patient Support, Donate
+ *   • 4 NCC slides - Education, Free Screenings, Patient Support, Donate
  *   • Single semantic <h1> per slide, animated word-by-word (no sr-only/visual split)
  *   • Headlines are two-part {lead, emphasis} → break cleanly at EVERY breakpoint
  *   • Auto-advance (7s) with manual override that pauses, then gracefully resumes
@@ -28,7 +28,7 @@ import {
   useTransform,
   useReducedMotion,
 } from "framer-motion";
-import { ArrowRight, Play, X, KeyRound } from "lucide-react";
+import { Play, X, KeyRound } from "lucide-react";
 
 import Hero1 from "@/assets/Hero1.jpg";
 import Hero2 from "@/assets/Hero2.jpg";
@@ -47,14 +47,14 @@ const SITE_URL =
 
 /* ─── Slides ──────────────────────────────────────────────
    headline = { lead, emphasis }
-   `lead` renders in white, `emphasis` in accent — one <h1>, clean wraps.
+   `lead` renders in white, `emphasis` in accent - one <h1>, clean wraps.
 ─────────────────────────────────────────────────────────── */
 const SLIDES = [
   {
     id: "education",
     tag: "Cancer Education",
     headline: { lead: "Knowledge is", emphasis: "the first cure." },
-    sub: "We bring cancer-awareness workshops, risk-factor education, and early-warning guidance directly to rural Nigerian communities in local languages.",
+    sub: "We bring cancer awareness workshops, risk factor education, and early warning guidance directly to rural Nigerian communities in local languages.",
     cta: { text: "Our Programmes", href: "/about" },
     ghost: { text: "Our Mission", href: "/about" },
     img: Hero1,
@@ -88,7 +88,7 @@ const SLIDES = [
     cta: { text: "Donate Now", href: "/donate" },
     ghost: { text: "Volunteer", href: "/volunteer" },
     img: Hero4,
-    alt: "Community members and NCC volunteers at a cancer-awareness fundraising event in Nigeria.",
+    alt: "Community members and NCC volunteers at a cancer awareness fundraising event in Nigeria.",
   },
 ];
 
@@ -101,7 +101,7 @@ function HeroSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Ngogbehei Cancer Center — Home",
+    name: "Ngogbehei Cancer Center | Home",
     url: SITE_URL,
     description:
       "Bridging the gap between cancer awareness and access to care across Nigeria and Africa. Free screening, education, and patient navigation.",
@@ -120,7 +120,7 @@ function HeroSchema() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   GEOMETRIC DECO — corner blueprint accent
+   GEOMETRIC DECO - corner blueprint accent
 ═══════════════════════════════════════════════════════════ */
 function GeometricDeco({ reduce }) {
   return (
@@ -195,7 +195,7 @@ function GeometricDeco({ reduce }) {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   VIDEO MODAL — focus-trapped, ESC + backdrop close
+   VIDEO MODAL - focus-trapped, ESC + backdrop close
 ═══════════════════════════════════════════════════════════ */
 function VideoModal({ open, onClose }) {
   const closeRef = useRef(null);
@@ -248,7 +248,7 @@ function VideoModal({ open, onClose }) {
                 <Play size={28} className="ml-1 text-[#F5C300]" fill="#F5C300" />
               </span>
               <p className="font-montserrat text-[14px] text-white/60">
-                Our story video — coming soon
+                Our story video, coming soon
               </p>
             </div>
             <button
@@ -280,7 +280,7 @@ export default function HeroSection() {
   const tickRef = useRef(null);
   const resumeRef = useRef(null);
 
-  /* Parallax — disabled under reduced-motion */
+  /* Parallax - disabled under reduced-motion */
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["start start", "end start"],
@@ -289,7 +289,7 @@ export default function HeroSection() {
   const imgOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.55]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 60]);
 
-  /* Autoplay — pauses on hover/focus/interaction, resumes automatically */
+  /* Autoplay - pauses on hover/focus/interaction, resumes automatically */
   useEffect(() => {
     clearInterval(tickRef.current);
     if (paused || videoOpen) return;
@@ -335,7 +335,7 @@ export default function HeroSection() {
         }}
         className="font-montserrat hero-vh relative w-full overflow-hidden bg-[#030712]"
         aria-roledescription="carousel"
-        aria-label="Ngogbehei Cancer Center — Homepage hero"
+        aria-label="Ngogbehei Cancer Center - Homepage hero"
       >
         {/* Background photo */}
         <AnimatePresence mode="sync">
@@ -366,7 +366,7 @@ export default function HeroSection() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Cinematic overlays — directional + bottom + top scrim */}
+        {/* Cinematic overlays - directional + bottom + top scrim */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-[1]"
@@ -410,7 +410,7 @@ export default function HeroSection() {
           style={reduce ? undefined : { y: contentY }}
           className="relative z-[10] flex h-full flex-col"
         >
-          {/* Tag — top */}
+          {/* Tag - top */}
           <div className="flex-shrink-0 px-5 pt-[calc(var(--navbar-h,102px)+18px)] sm:px-8 sm:pt-[calc(var(--navbar-h,102px)+22px)] lg:px-16 lg:pt-[calc(var(--navbar-h,102px)+32px)] xl:px-20">
             <AnimatePresence mode="wait">
               <motion.div
@@ -435,13 +435,13 @@ export default function HeroSection() {
 
           <div className="min-h-0 flex-1" />
 
-          {/* Headline + CTAs — bottom, generous safe gap above navigator */}
+          {/* Headline + CTAs - bottom, generous safe gap above navigator */}
           <div
             className="flex-shrink-0 px-5 pb-8 sm:px-8 sm:pb-10 lg:px-16 lg:pb-14 xl:px-20"
             style={{ paddingBottom: `calc(${TAB_H}px + env(safe-area-inset-bottom, 0px) + 1.5rem)` }}
           >
             <div className="max-w-[680px] lg:max-w-[960px]">
-              {/* Headline — single <h1>, two parts, clean wrap everywhere */}
+              {/* Headline - single <h1>, two parts, clean wrap everywhere */}
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={`h1-${active}`}
@@ -487,7 +487,7 @@ export default function HeroSection() {
                   </p>
 
                   <div className="flex flex-col flex-wrap items-stretch gap-3 sm:flex-row sm:items-center">
-                    {/* PRIMARY — branded key chip CTA (echoes reference) */}
+                    {/* PRIMARY - branded key chip CTA (echoes reference) */}
                     <Link
                       href={slide.cta.href}
                       className="group inline-flex items-center gap-3 rounded-full pl-2 pr-6 font-montserrat font-black transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#030712]"
@@ -510,39 +510,6 @@ export default function HeroSection() {
                         {slide.cta.text}
                       </span>
                     </Link>
-
-                    {/* SECONDARY — ghost */}
-                    <Link
-                      href={slide.ghost.href}
-                      className="group inline-flex items-center justify-center gap-1.5 rounded-full border border-white/25 px-6 py-[11px] font-montserrat font-bold text-white transition-all duration-200 hover:border-white/45 hover:bg-white/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-                      style={{ fontSize: "clamp(12.5px, 1.2vw, 14px)" }}
-                    >
-                      {slide.ghost.text}
-                      <ArrowRight
-                        size={14}
-                        strokeWidth={2.2}
-                        aria-hidden="true"
-                        className="transition-transform duration-200 group-hover:translate-x-[3px]"
-                      />
-                    </Link>
-
-                    {/* TERTIARY — watch story (desktop only) */}
-                    <button
-                      type="button"
-                      onClick={() => setVideoOpen(true)}
-                      aria-label="Watch the Ngogbehei Cancer Center story"
-                      className="group hidden items-center gap-2.5 rounded-full text-white/75 transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 sm:flex"
-                    >
-                      <span
-                        aria-hidden="true"
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-all duration-200 group-hover:border-white/45 group-hover:bg-white/[0.06]"
-                      >
-                        <Play size={13} strokeWidth={2} className="ml-[2px]" fill="currentColor" />
-                      </span>
-                      <span className="font-montserrat text-[12.5px] font-bold tracking-wide">
-                        Watch our story
-                      </span>
-                    </button>
                   </div>
                 </motion.div>
               </AnimatePresence>

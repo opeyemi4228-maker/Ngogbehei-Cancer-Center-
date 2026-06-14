@@ -2,7 +2,7 @@
 
 /**
  * @file app/get-involved/volunteer/page.jsx
- * @project Ngogbehei Cancer Center — Volunteer Page
+ * @project Ngogbehei Cancer Center - Volunteer Page
  *
  * Production-ready · SEO-optimized · Fully accessible.
  *
@@ -69,7 +69,7 @@ function VolunteerSchema() {
         "@id": `${SITE_URL}/get-involved/volunteer`,
         name: "Volunteer With Ngogbehei Cancer Center",
         description:
-          "Join NCC as a volunteer across six pathways — field outreach, healthcare, fundraising, communications, education, and virtual support.",
+          "Join NCC as a volunteer across six pathways: field outreach, healthcare, fundraising, communications, education, and virtual support.",
         url: `${SITE_URL}/get-involved/volunteer`,
         breadcrumb: {
           "@type": "BreadcrumbList",
@@ -362,7 +362,7 @@ function VolunteerHero() {
           </motion.div>
 
           <div className="mb-7 overflow-hidden">
-            {["Lend us", "your time —"].map((line, i) => (
+            {["Lend us", "your time -"].map((line, i) => (
               <motion.div
                 key={line}
                 initial={{ opacity: 0, y: 56, skewY: 1.5 }}
@@ -421,7 +421,7 @@ function VolunteerHero() {
             transition={{ delay: 0.44, duration: 0.7 }}
             className="font-montserrat text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
           >
-            Whether you have an hour a week or a month to spare — every
+            Whether you have an hour a week or a month to spare, every
             volunteer hour helps NCC bring cancer education, screening, and
             patient navigation to communities that need it most.
           </motion.p>
@@ -574,11 +574,11 @@ const ROLES = [
     bg: "#f0fdf4",
     border: "#bbf7d0",
     title: "Community Outreach Volunteer",
-    commitment: "4–8 hrs / week",
+    commitment: "4-8 hrs / week",
     location: "Lagos, Abuja, Port Harcourt",
     desc:
       "Lead cancer awareness workshops in rural communities, schools, churches, and markets. Translate materials into local languages and mobilise turnout for screening drives.",
-    tags: ["In-person", "Weekly", "Training provided"],
+    tags: ["In person", "Weekly", "Training provided"],
   },
   {
     cat: "healthcare",
@@ -590,8 +590,8 @@ const ROLES = [
     commitment: "Saturdays · monthly",
     location: "Mobile screening units",
     desc:
-      "Doctors, nurses, midwives and screening technicians staff our pop-up clinics. Conduct breast, cervical, and prostate screenings; counsel patients; and make referrals.",
-    tags: ["Licensed", "Monthly drives", "CPD-eligible"],
+      "Doctors, nurses, midwives and screening technicians staff our pop up clinics. Conduct breast, cervical, and prostate screenings; counsel patients; and make referrals.",
+    tags: ["Licensed", "Monthly drives", "CPD eligible"],
   },
   {
     cat: "fundraising",
@@ -604,7 +604,7 @@ const ROLES = [
     location: "Anywhere",
     desc:
       "Run sponsored walks, charity dinners, online fundraisers, or workplace giving campaigns. We provide branded materials, talking points, and donation tracking.",
-    tags: ["Self-paced", "Toolkit provided", "All ages welcome"],
+    tags: ["Self paced", "Toolkit provided", "All ages welcome"],
   },
   {
     cat: "virtual",
@@ -613,11 +613,11 @@ const ROLES = [
     bg: "#f5f3ff",
     border: "#ddd6fe",
     title: "Virtual Communications Volunteer",
-    commitment: "2–4 hrs / week",
+    commitment: "2-4 hrs / week",
     location: "Remote · UK / Africa",
     desc:
       "Translate health content, draft social posts, edit survivor story videos, or maintain our community newsletter. Ideal for students and remote professionals.",
-    tags: ["Fully remote", "Skill-building", "Global team"],
+    tags: ["Fully remote", "Skill building", "Global team"],
   },
   {
     cat: "education",
@@ -626,11 +626,11 @@ const ROLES = [
     bg: "#ecfeff",
     border: "#a5f3fc",
     title: "Cancer Educator",
-    commitment: "1–2 weekends / month",
+    commitment: "1-2 weekends / month",
     location: "Nigeria · UK universities",
     desc:
-      "Train teachers, peer educators, and youth leaders in cancer literacy. Deliver curriculum-backed sessions in secondary schools and on university campuses.",
-    tags: ["Health background", "Train-the-trainer", "Certificate"],
+      "Train teachers, peer educators, and youth leaders in cancer literacy. Deliver curriculum backed sessions in secondary schools and on university campuses.",
+    tags: ["Health background", "Train the trainer", "Certificate"],
   },
   {
     cat: "field",
@@ -639,11 +639,11 @@ const ROLES = [
     bg: "#fef2f2",
     border: "#fecaca",
     title: "Patient Companion",
-    commitment: "1–3 visits / month",
+    commitment: "1-3 visits / month",
     location: "Lagos, Abuja, Ibadan",
     desc:
-      "Accompany newly-diagnosed patients to hospital appointments, sit with them during chemotherapy, and provide emotional support throughout treatment journeys.",
-    tags: ["Compassionate", "DBS-checked", "Ongoing training"],
+      "Accompany newly diagnosed patients to hospital appointments, sit with them during chemotherapy, and provide emotional support throughout treatment journeys.",
+    tags: ["Compassionate", "DBS checked", "Ongoing training"],
   },
 ];
 
@@ -709,7 +709,7 @@ function Roles() {
             className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-sm"
           >
             Find the role that fits your skills, schedule, and location.
-            Don&apos;t see a match? Apply with a free-text proposal.
+            Don&apos;t see a match? Apply with a free text proposal.
           </motion.p>
         </div>
 
@@ -884,7 +884,7 @@ const STEPS = [
     n: "03",
     title: "Onboarding & training",
     desc:
-      "Self-paced online onboarding plus a single in-person training day (or virtual session) covering safeguarding, cultural sensitivity, and your specific role.",
+      "Self paced online onboarding plus a single in person training day (or virtual session) covering safeguarding, cultural sensitivity, and your specific role.",
     color: "#0284c7",
   },
   {
@@ -943,8 +943,8 @@ function Journey() {
             transition={{ delay: 0.14 }}
             className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-sm"
           >
-            Most volunteers complete the full process within 2–3 weeks. We
-            keep it simple — and we&apos;re here every step of the way.
+            Most volunteers complete the full process within 2-3 weeks. We
+            keep it simple, and we&apos;re here every step of the way.
           </motion.p>
         </div>
 
@@ -1052,8 +1052,8 @@ function Spotlight() {
             className="space-y-6 mb-10"
           >
             <p className="font-montserrat text-[15px] text-slate-500 leading-[1.8]">
-              Our volunteers come from every background — nurses, teachers,
-              business owners, students, retirees — united by a single belief:
+              Our volunteers come from every background: nurses, teachers,
+              business owners, students, retirees, united by a single belief:
               that cancer doesn&apos;t have to be a death sentence in rural
               Africa. They show up to screening drives, community workshops, and
               patient support groups because they&apos;ve seen what knowledge
@@ -1061,7 +1061,7 @@ function Spotlight() {
             </p>
             <p className="font-montserrat text-[15px] text-slate-500 leading-[1.8]">
               &ldquo;Every time we catch a case early, every time a patient
-              learns their symptoms mean something — that&apos;s the work that
+              learns their symptoms mean something, that&apos;s the work that
               stays with you. It&apos;s not just about numbers. It&apos;s about
               the mothers, daughters, and sisters in our communities who now
               have a fighting chance.&rdquo;
@@ -1120,11 +1120,11 @@ const PATHWAYS = [
 ];
 
 const AVAILABILITY = [
-  "1–2 hrs / week",
-  "3–5 hrs / week",
+  "1-2 hrs / week",
+  "3-5 hrs / week",
   "6+ hrs / week",
   "Monthly drives only",
-  "One-off events",
+  "One off events",
 ];
 
 function ApplyForm() {
@@ -1208,8 +1208,16 @@ function ApplyForm() {
     });
     if (!valid) return;
     setStatus("loading");
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus("success");
+    const res = await fetch("/api/volunteer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, location: form.location, pathway: form.pathway, availability: form.availability, skills: form.skills, why: form.why, over18: form.over18, consent: form.consent }),
+    });
+    if (res.ok) {
+      setStatus("success");
+    } else {
+      setStatus("idle");
+    }
   };
 
   const fw = (d = 0) => ({
@@ -1839,12 +1847,12 @@ const FAQS = [
   {
     q: "Do I need any qualifications to volunteer?",
     a:
-      "Most roles require no prior qualifications — just enthusiasm, reliability, and a willingness to learn. Healthcare and educator pathways do require relevant credentials, which we'll verify during onboarding.",
+      "Most roles require no prior qualifications, just enthusiasm, reliability, and a willingness to learn. Healthcare and educator pathways do require relevant credentials, which we'll verify during onboarding.",
   },
   {
     q: "Is there a minimum time commitment?",
     a:
-      "We ask for a minimum 3-month commitment to maintain continuity for the communities we serve. Within that, hours are flexible — anything from 1–2 hours a week to full weekend drives works.",
+      "We ask for a minimum 3 month commitment to maintain continuity for the communities we serve. Within that, hours are flexible, anything from 1 to 2 hours a week to full weekend drives works.",
   },
   {
     q: "Can I volunteer remotely from outside Nigeria?",
@@ -1854,17 +1862,17 @@ const FAQS = [
   {
     q: "Will I get any training?",
     a:
-      "Absolutely. Every volunteer goes through onboarding covering NCC's mission, safeguarding, cultural sensitivity, and role-specific skills. Healthcare volunteers receive additional clinical refresher training before each drive.",
+      "Absolutely. Every volunteer goes through onboarding covering NCC's mission, safeguarding, cultural sensitivity, and role specific skills. Healthcare volunteers receive additional clinical refresher training before each drive.",
   },
   {
     q: "Are there any costs to me?",
     a:
-      "No. NCC covers all training, materials, and reasonable travel expenses for in-person roles. We never ask volunteers to fundraise to qualify for a role.",
+      "No. NCC covers all training, materials, and reasonable travel expenses for in person roles. We never ask volunteers to fundraise to qualify for a role.",
   },
   {
     q: "Can I bring my workplace or student group?",
     a:
-      "Yes — group volunteering is one of our favourite formats. Reach out via the partnerships pathway and we can design a programme around your team's skills and schedule.",
+      "Yes, group volunteering is one of our favourite formats. Reach out via the partnerships pathway and we can design a programme around your team's skills and schedule.",
   },
 ];
 
@@ -2119,7 +2127,7 @@ function CTABanner() {
             >
               The next 10,000 lives
               <br />
-              we reach —
+              we reach -
               <br />
               <span style={{ color: "#F5C300" }}>they need you too.</span>
             </motion.h2>
@@ -2131,7 +2139,7 @@ function CTABanner() {
             >
               Every screening drive needs hands. Every workshop needs voices.
               Every patient needs a companion. Step into the role that fits
-              your life — we&apos;ll meet you where you are.
+              your life, we&apos;ll meet you where you are.
             </motion.p>
           </div>
 

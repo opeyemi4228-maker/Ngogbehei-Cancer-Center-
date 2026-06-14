@@ -20,8 +20,8 @@ const STORIES = [
     id: 1,
     tag: "Founder Story",
     headline:
-      "The mission Marcel Ngogbehei started — and why it can't stop now.",
-    // African man in leadership/speaking pose — founder energy
+      "The mission Marcel Ngogbehei started - and why it can't stop now.",
+    // African man in leadership/speaking pose - founder energy
     img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=85",
     href: "/story/founder",
     large: true,
@@ -87,7 +87,7 @@ function VideoModal({ open, onClose }) {
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white/60">
             <Play size={28} aria-hidden="true" />
             <p className="font-montserrat text-sm">
-              Our story video — coming soon
+              Our story video - coming soon
             </p>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function StorySection() {
 
           {/* Bento grid */}
           <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-4 mb-12">
-            {/* Left — large hero */}
+            {/* Left - large hero */}
             <motion.article
               initial={{ opacity: 0, x: -24 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -310,7 +310,7 @@ export default function StorySection() {
               </button>
             </motion.article>
 
-            {/* Right — two stacked */}
+            {/* Right - two stacked */}
             <div className="flex flex-col gap-4">
               {STORIES.slice(1).map((s, i) => (
                 <motion.article
@@ -394,7 +394,7 @@ export default function StorySection() {
                   className="font-montserrat text-xl sm:text-2xl font-black text-slate-900 leading-snug mb-3"
                   style={{ letterSpacing: "-0.02em" }}
                 >
-                  &ldquo;When they told me it was caught early, I cried — not
+                  &ldquo;When they told me it was caught early, I cried - not
                   from fear, but from relief. The NCC team was there every step
                   of the way.&rdquo;
                 </blockquote>

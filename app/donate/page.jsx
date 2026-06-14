@@ -2,7 +2,7 @@
 
 /**
  * @file app/donate/page.jsx
- * @project Ngogbehei Cancer Center — Donate Page
+ * @project Ngogbehei Cancer Center - Donate Page
  *
  * Production-ready · SEO-optimized · Fully accessible.
  *
@@ -348,7 +348,7 @@ function DonateHero() {
             transition={{ delay: 0.44, duration: 0.7 }}
             className="font-montserrat text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
           >
-            Every contribution — however small — helps bring life-saving cancer
+            Every contribution, however small, helps bring lifesaving cancer
             education, early detection, and patient support to communities that
             need it most.
           </motion.p>
@@ -426,7 +426,7 @@ function MissionStatement() {
               <span style={{ color: "#059669" }}> Not anymore.</span>
             </h2>
             <p className="font-montserrat text-[15px] text-slate-500 leading-[1.8]">
-              In many rural communities, cancer is still a death sentence — not
+              In many rural communities, cancer is still a death sentence, not
               because it can&apos;t be treated, but because it wasn&apos;t
               caught in time. With your support, we can bring cancer education,
               screening, and support to places that have never had access
@@ -524,8 +524,8 @@ const TIERS = [
   { label: "₦5,000", value: 5000, usd: 3, desc: "Awareness for 100" },
   { label: "₦10,000", value: 10000, usd: 7, desc: "Screening for 2" },
   { label: "₦25,000", value: 25000, usd: 17, desc: "Screening for 5" },
-  { label: "₦50,000", value: 50000, usd: 33, desc: "Half-day clinic" },
-  { label: "₦100,000", value: 100000, usd: 66, desc: "Full-day clinic" },
+  { label: "₦50,000", value: 50000, usd: 33, desc: "Half day clinic" },
+  { label: "₦100,000", value: 100000, usd: 66, desc: "Full day clinic" },
   { label: "Other", value: 0, usd: 0, desc: "Custom amount" },
 ];
 
@@ -561,7 +561,7 @@ function DonationForm() {
   const displayAmt =
     amount > 0
       ? `${cur.symbol}${amount.toLocaleString()}`
-      : `${cur.symbol}—`;
+      : `${cur.symbol}-`;
 
   const fw = (d = 0) => ({
     initial: { opacity: 0, y: 20 },
@@ -573,8 +573,16 @@ function DonationForm() {
     e.preventDefault();
     if (!email || amount <= 0) return;
     setStatus("loading");
-    await new Promise((r) => setTimeout(r, 1400));
-    setStatus("success");
+    const res = await fetch("/api/donate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, amount, currency: cur.code, frequency: freq, dedicate, dedicatee }),
+    });
+    if (res.ok) {
+      setStatus("success");
+    } else {
+      setStatus("idle");
+    }
   };
 
   if (status === "success") {
@@ -610,7 +618,7 @@ function DonationForm() {
           </p>
         </div>
         <p className="font-montserrat text-[13px] text-slate-400 italic">
-          &ldquo;Every donation brings us one step closer to a cancer-aware
+          &ldquo;Every donation brings us one step closer to a cancer aware
           Africa.&rdquo;
         </p>
         <button
@@ -672,7 +680,7 @@ function DonationForm() {
             className="inline-flex rounded-xl border border-slate-200 overflow-hidden bg-slate-50 p-1 gap-1"
           >
             {[
-              ["one-time", "One-Time"],
+              ["one-time", "One Time"],
               ["monthly", "Monthly"],
             ].map(([val, lbl]) => (
               <button
@@ -945,7 +953,7 @@ function DonationForm() {
         >
           <div>
             <p className="font-montserrat text-[10px] font-black uppercase tracking-wider text-emerald-700 mb-0.5">
-              {freq === "monthly" ? "Monthly giving" : "One-time gift"}
+              {freq === "monthly" ? "Monthly giving" : "One time gift"}
             </p>
             <p
               className="font-montserrat text-[22px] font-black text-emerald-700 leading-none"
@@ -1081,7 +1089,7 @@ function TrustSignals() {
       color: "#059669",
       bg: "#f0fdf4",
       border: "#bbf7d0",
-      title: "UK-Registered Charity",
+      title: "UK Registered Charity",
       desc:
         "Registered with the Charity Commission for England & Wales. Full financial transparency.",
     },
@@ -1099,9 +1107,9 @@ function TrustSignals() {
       color: "#7c3aed",
       bg: "#f5f3ff",
       border: "#ddd6fe",
-      title: "WHO-Aligned Programmes",
+      title: "WHO Aligned Programmes",
       desc:
-        "All NCC programmes are validated against WHO cancer early-detection standards.",
+        "All NCC programmes are validated against WHO cancer early detection standards.",
     },
     {
       icon: Globe2,
@@ -1110,7 +1118,7 @@ function TrustSignals() {
       border: "#fde68a",
       title: "100% Programme Spend",
       desc:
-        "Our UK administration is grant-funded. Every donation goes to African programmes.",
+        "Our UK administration is grant funded. Every donation goes to African programmes.",
     },
   ];
   return (
@@ -1319,7 +1327,7 @@ function DonorQuote() {
               style={{ letterSpacing: "-0.025em" }}
             >
               &ldquo;I donated ₦10,000 last year thinking it was a small
-              contribution. NCC told me it funded screenings for two women —
+              contribution. NCC told me it funded screenings for two women -
               one of whom was diagnosed at Stage 1. She&apos;s alive
               today.&rdquo;
             </p>
@@ -1581,7 +1589,7 @@ export default function DonatePage() {
                       aria-hidden="true"
                     />
                     <span className="font-montserrat text-[11px] text-slate-400 font-semibold">
-                      256-bit SSL encrypted · UK GDPR compliant
+                      256 bit SSL encrypted · UK GDPR compliant
                     </span>
                   </div>
                 </div>

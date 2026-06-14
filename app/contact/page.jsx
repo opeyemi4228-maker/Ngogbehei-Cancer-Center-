@@ -2,7 +2,7 @@
 
 /**
  * @file app/contact/page.jsx
- * @project Ngogbehei Cancer Center — Contact Page
+ * @project Ngogbehei Cancer Center - Contact Page
  *
  * Production-ready · SEO-optimized · Fully accessible.
  *
@@ -54,7 +54,7 @@ function ContactSchema() {
       "@type": "NGO",
       name: "Marcel Ngogbehei Center for Cancer Education & Care",
       email: "info@ngogbeheicc.org",
-      telephone: "+234-800-NCC-CARE",
+      telephone: "+234 800 NCC CARE",
       address: [
         {
           "@type": "PostalAddress",
@@ -375,7 +375,7 @@ function ContactHero() {
             className="font-montserrat text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
           >
             Have a question, need patient support, or want to partner with us?
-            Our team is here — reach out and we&apos;ll respond as quickly as we
+            Our team is here, reach out and we&apos;ll respond as quickly as we
             can.
           </motion.p>
 
@@ -464,7 +464,7 @@ function ContactPageHeader() {
             className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-sm lg:text-right pb-1"
           >
             Whether you need patient support, want to partner with us, or
-            simply have a question — our team responds within 24 hours.
+            simply have a question, our team responds within 24 hours.
           </motion.p>
         </div>
 
@@ -531,8 +531,16 @@ function ContactForm() {
     setTouched({ name: true, email: true, message: true });
     if (!valid) return;
     setStatus("loading");
-    await new Promise((r) => setTimeout(r, 1400));
-    setStatus("success");
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, reason: form.reason, message: form.message }),
+    });
+    if (res.ok) {
+      setStatus("success");
+    } else {
+      setStatus("idle");
+    }
   };
 
   const fw = (d = 0) => ({
@@ -825,8 +833,8 @@ const INFO_CARDS = [
     bg: "#f0fdf4",
     border: "#bbf7d0",
     label: "Call Us",
-    primary: "+234-800-NCC-CARE",
-    secondary: "Available Mon–Fri, 8am–6pm WAT",
+    primary: "+234 800 NCC CARE",
+    secondary: "Available Mon to Fri, 8am to 6pm WAT",
     href: "tel:+2348001234567",
   },
   {
@@ -836,7 +844,7 @@ const INFO_CARDS = [
     border: "#bfdbfe",
     label: "Email Us",
     primary: "info@ngogbeheicc.org",
-    secondary: "24-hour response guarantee",
+    secondary: "24 hour response guarantee",
     href: "mailto:info@ngogbeheicc.org",
   },
   {
@@ -855,8 +863,8 @@ const INFO_CARDS = [
     bg: "#fffbeb",
     border: "#fde68a",
     label: "Hours",
-    primary: "Mon – Fri  8:00am – 6:00pm",
-    secondary: "Sat  9:00am – 2:00pm (screenings)",
+    primary: "Mon to Fri  8:00am to 6:00pm",
+    secondary: "Sat  9:00am to 2:00pm (screenings)",
   },
 ];
 
@@ -1051,9 +1059,9 @@ const OFFICES = [
     role: "Head Office",
     color: "#059669",
     address: "Wuse 2, Abuja, FCT",
-    phone: "+234-800-NCC-CARE",
+    phone: "+234 800 NCC CARE",
     email: "abuja@ngogbeheicc.org",
-    hours: "Mon–Fri 8am–6pm WAT",
+    hours: "Mon to Fri 8am to 6pm WAT",
     img: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=600&q=80",
   },
   {
@@ -1063,9 +1071,9 @@ const OFFICES = [
     role: "Operations Hub",
     color: "#0284c7",
     address: "14 Bode Thomas Street, Surulere, Lagos",
-    phone: "+234-800-NCC-LAGOS",
+    phone: "+234 800 NCC LAGOS",
     email: "lagos@ngogbeheicc.org",
-    hours: "Mon–Fri 8am–6pm WAT",
+    hours: "Mon to Fri 8am to 6pm WAT",
     img: "https://images.unsplash.com/photo-1547941126-3d5322b218b0?w=600&q=80",
   },
   {
@@ -1075,9 +1083,9 @@ const OFFICES = [
     role: "UK Registered Office",
     color: "#7c3aed",
     address: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ",
-    phone: "+44-20-0000-0000",
+    phone: "+44 20 0000 0000",
     email: "uk@ngogbeheicc.org",
-    hours: "Mon–Fri 9am–5pm GMT",
+    hours: "Mon to Fri 9am to 5pm GMT",
     img: "https://images.unsplash.com/photo-1617791160505-6f00504f3519?w=600&q=80",
   },
 ];
@@ -1253,7 +1261,7 @@ const FAQS = [
   {
     q: "How do I book a free cancer screening?",
     a:
-      "You can book online through our website, call +234-800-NCC-CARE, or visit any of our partner clinics. Screenings are available every Saturday in Abuja and select weekdays in Lagos. No appointment is needed for walk-in Saturdays.",
+      "You can book online through our website, call +234 800 NCC CARE, or visit any of our partner clinics. Screenings are available every Saturday in Abuja and select weekdays in Lagos. No appointment is needed for walk in Saturdays.",
   },
   {
     q: "Is NCC a registered nonprofit?",
@@ -1263,7 +1271,7 @@ const FAQS = [
   {
     q: "How are donations used?",
     a:
-      "100% of donations fund our African programmes — cancer education, free screenings, patient support, and community outreach. Our UK administration costs are covered by separate grants. We publish detailed financial accounts annually.",
+      "100% of donations fund our African programmes: cancer education, free screenings, patient support, and community outreach. Our UK administration costs are covered by separate grants. We publish detailed financial accounts annually.",
   },
   {
     q: "Can I volunteer with NCC?",
@@ -1273,7 +1281,7 @@ const FAQS = [
   {
     q: "How can my company partner with NCC?",
     a:
-      "We offer CSR partnerships, sponsored screening drives, employee volunteering programmes, and co-branded awareness campaigns. Contact our partnerships team at info@ngogbeheicc.org to discuss options.",
+      "We offer CSR partnerships, sponsored screening drives, employee volunteering programmes, and co branded awareness campaigns. Contact our partnerships team at info@ngogbeheicc.org to discuss options.",
   },
   {
     q: "Does NCC provide treatment directly?",
@@ -1535,7 +1543,7 @@ function CTABanner() {
               className="font-montserrat text-[16px] text-white/85 leading-relaxed max-w-md"
             >
               Whether it&apos;s booking a screening, understanding your
-              diagnosis, or finding out how to get involved — we&apos;re one
+              diagnosis, or finding out how to get involved, we&apos;re one
               message away.
             </motion.p>
           </div>
@@ -1561,7 +1569,7 @@ function CTABanner() {
               {
                 icon: Phone,
                 label: "Call Us",
-                sub: "+234-800-NCC-CARE",
+                sub: "+234 800 NCC CARE",
                 color: "#10b981",
                 href: "tel:+2348001234567",
               },

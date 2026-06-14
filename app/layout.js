@@ -2,8 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { AppContextProvider } from "@/context/AppContext";
 import { Toaster } from "react-hot-toast";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteShell from "@/components/SiteShell";
 
 // ─── FONT ─────────────────────────────────────────────────────────────────────
 const montserrat = Montserrat({
@@ -27,7 +26,7 @@ export const metadata = {
   },
 
   description:
-    "Ngogbehei Cancer Center is Nigeria's leading cancer foundation, delivering world-class screening, treatment, and patient support programs across Abuja and beyond.",
+    "Ngogbehei Cancer Center is Nigeria's leading cancer foundation, delivering world class screening, treatment, and patient support programs across Abuja and beyond.",
 
   keywords: [
     "cancer center Nigeria",
@@ -77,13 +76,13 @@ export const metadata = {
     siteName: "Ngogbehei Cancer Center",
     title: "Ngogbehei Cancer Center | Hope. Healing. Humanity.",
     description:
-      "Nigeria's leading cancer foundation. World-class screening, treatment, and patient support in Abuja.",
+      "Nigeria's leading cancer foundation. World class screening, treatment, and patient support in Abuja.",
     images: [
       {
         url: "/images/og/default-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Ngogbehei Cancer Center — Hope. Healing. Humanity.",
+        alt: "Ngogbehei Cancer Center | Hope. Healing. Humanity.",
         type: "image/jpeg",
       },
     ],
@@ -96,31 +95,14 @@ export const metadata = {
     creator: "@NgogbeheiCC",
     title: "Ngogbehei Cancer Center | Hope. Healing. Humanity.",
     description:
-      "Nigeria's leading cancer foundation. World-class screening, treatment, and patient support in Abuja.",
+      "Nigeria's leading cancer foundation. World class screening, treatment, and patient support in Abuja.",
     images: ["/images/og/default-og-image.jpg"],
   },
 
   // ── Icons ──
   icons: {
-    icon: [
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon/favicon.ico", rel: "shortcut icon" },
-    ],
-    apple: [
-      { url: "/favicon/apple-touch-icon.png", sizes: "180x180" },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/favicon/safari-pinned-tab.svg",
-        color: "#0A2240",
-      },
-    ],
+    icon: "/favicon.ico",
   },
-
-  // ── Manifest ──
-  manifest: "/site.webmanifest",
 
   // ── Verification ──
   verification: {
@@ -150,7 +132,7 @@ function StructuredData() {
     name: "Ngogbehei Cancer Center",
     alternateName: "NCC",
     description:
-      "Ngogbehei Cancer Center is Nigeria's leading cancer foundation, delivering world-class screening, treatment, and patient support programs across Abuja and beyond.",
+      "Ngogbehei Cancer Center is Nigeria's leading cancer foundation, delivering world class screening, treatment, and patient support programs across Abuja and beyond.",
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
@@ -347,9 +329,9 @@ export default function RootLayout({ children }) {
 
         {/* ── App Context + Page Content ── */}
         <AppContextProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <SiteShell>
+            {children}
+          </SiteShell>
         </AppContextProvider>
       </body>
     </html>

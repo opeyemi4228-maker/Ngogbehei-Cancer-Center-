@@ -5,9 +5,9 @@
  * @project Ngogbehei Cancer Center
  * @description Production-ready footer.
  *   Layout follows the 3-zone reference structure:
- *     • Zone 1 — Brand block + Newsletter card + Contact lines
- *     • Zone 2 — 4-column nav: Explore · Get Involved · About · Follow
- *     • Zone 3 — Legal links + copyright
+ *     • Zone 1 - Brand block + Newsletter card + Contact lines
+ *     • Zone 2 - 4-column nav: Explore · Get Involved · About · Follow
+ *     • Zone 3 - Legal links + copyright
  *
  *   All routes & content are scoped strictly to NCC pages that
  *   actually exist in the site's component set. Nothing fabricated.
@@ -33,7 +33,7 @@ import logoImage from "@/assets/logo.png";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.ngogbeheicc.org";
 
-/* ─── Nav data — only verified routes ───────────────────── */
+/* ─── Nav data - only verified routes ───────────────────── */
 const EXPLORE_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -66,7 +66,7 @@ const SOCIAL_LINKS = [
 ];
 
 /* ═══════════════════════════════════════════════
-   STRUCTURED DATA — Organization (SEO)
+   STRUCTURED DATA - Organization (SEO)
 ═══════════════════════════════════════════════ */
 function OrganizationSchema() {
   const schema = {
@@ -79,7 +79,7 @@ function OrganizationSchema() {
     email: "info@ngogbeheicc.org",
     telephone: "+234-800-NCC-CARE",
     description:
-      "UK-registered nonprofit bridging the gap between cancer awareness and access to care across Nigeria and Africa.",
+      "UK registered nonprofit bridging the gap between cancer awareness and access to care across Nigeria and Africa.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Wuse 2",
@@ -105,7 +105,7 @@ function Logo() {
   return (
     <Link
       href="/"
-      aria-label="Ngogbehei Cancer Center — Home"
+      aria-label="Ngogbehei Cancer Center - Home"
       className="inline-flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C300]/40 rounded-sm font-montserrat"
     >
       <Image
@@ -167,7 +167,7 @@ export default function Footer() {
         role="contentinfo"
       >
         <h2 id="footer-heading" className="sr-only">
-          Ngogbehei Cancer Center — site footer
+          Ngogbehei Cancer Center - site footer
         </h2>
 
         {/* Ambient glow */}
@@ -202,7 +202,7 @@ export default function Footer() {
         />
 
         <div className="relative px-6 md:px-10 lg:px-16 xl:px-20 max-w-[1440px] mx-auto">
-          {/* ═══════ Zone 1 — Brand + Newsletter ═══════ */}
+          {/* ═══════ Zone 1 - Brand + Newsletter ═══════ */}
           <div className="pt-20 md:pt-24 lg:pt-28 pb-14 md:pb-20 border-b border-white/10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
               {/* Brand block */}
@@ -217,7 +217,7 @@ export default function Footer() {
                     className="inline-block w-10 h-px"
                     style={{ backgroundColor: "#F5C300" }}
                   />
-                  UK-Registered · Africa-Focused
+                  UK Registered · Africa Focused
                 </p>
 
                 <p className="font-montserrat font-light leading-[1.15] tracking-[-0.01em] text-white text-[28px] md:text-[36px] lg:text-[42px] max-w-2xl">
@@ -233,7 +233,7 @@ export default function Footer() {
 
                 <p className="mt-6 md:mt-8 font-montserrat text-[14px] md:text-[15px] leading-[1.75] text-white/70 max-w-lg">
                   The Marcel Ngogbehei Center for Cancer Education &amp; Care is
-                  a UK-registered nonprofit delivering cancer education, free
+                  a UK registered nonprofit delivering cancer education, free
                   screenings, and patient navigation directly to underserved
                   communities across Nigeria and Africa.
                 </p>
@@ -252,7 +252,7 @@ export default function Footer() {
 
                 <p className="font-montserrat text-[15px] md:text-[16px] leading-[1.7] text-white/75 mb-8 max-w-md">
                   Stay updated on breakthroughs, events, and impact stories from
-                  NCC. One concise email a month — no spam, ever.
+                  NCC. One concise email a month, no spam, ever.
                 </p>
 
                 <form
@@ -360,7 +360,7 @@ export default function Footer() {
                   <FooterContactLink
                     Icon={FiPhone}
                     label="Phone"
-                    value="+234-800-NCC-CARE"
+                    value="+234 800 NCC CARE"
                     href="tel:+2348001234567"
                   />
                 </address>
@@ -368,12 +368,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ═══════ Zone 2 — Navigation ═══════ */}
+          {/* ═══════ Zone 2 - Navigation ═══════ */}
           <div className="py-14 md:py-16 border-b border-white/10">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
               {/* Explore */}
               <nav
-                aria-label="Footer — Explore"
+                aria-label="Footer - Explore"
                 className="md:col-span-3"
               >
                 <h3 className="flex items-center gap-3 font-montserrat text-[10.5px] font-bold tracking-[0.28em] uppercase text-[#F5C300] mb-6">
@@ -431,7 +431,7 @@ export default function Footer() {
                         Donate
                       </span>
                       <span className="block font-montserrat text-[11.5px] text-white/40 mt-0.5">
-                        Fund life-saving programs
+                        Fund lifesaving programs
                       </span>
                     </span>
                     <FiArrowUpRight
@@ -462,7 +462,7 @@ export default function Footer() {
 
               {/* About */}
               <nav
-                aria-label="Footer — About"
+                aria-label="Footer - About"
                 className="md:col-span-3"
               >
                 <h3 className="flex items-center gap-3 font-montserrat text-[10.5px] font-bold tracking-[0.28em] uppercase text-[#F5C300] mb-6">
@@ -514,7 +514,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ═══════ Zone 3 — Legal + copyright ═══════ */}
+          {/* ═══════ Zone 3 - Legal + copyright ═══════ */}
           <div className="py-10 md:py-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-3">
               {LEGAL_LINKS.map((link) => (

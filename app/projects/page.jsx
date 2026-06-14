@@ -7,8 +7,8 @@
  * Sections:
  *  1. Basel-style cinematic hero banner
  *  2. Projects filter grid (All / Active / Completed / Upcoming)
- *  3. Featured project — full-width with auto-play-on-scroll video
- *  4. Video showcase strip — multiple videos auto-play on scroll into view
+ *  3. Featured project - full-width with auto-play-on-scroll video
+ *  4. Video showcase strip - multiple videos auto-play on scroll into view
  *  5. Project timeline
  *  6. Partners strip
  *  7. Dark CTA banner
@@ -87,7 +87,7 @@ function AutoPlayVideo({ src, poster, className, style, children, overlay = true
   const [muted,    setMuted]    = useState(true);
   const [hovered,  setHovered]  = useState(false);
 
-  /* IntersectionObserver — play when 45% visible, pause when less */
+  /* IntersectionObserver - play when 45% visible, pause when less */
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -167,7 +167,7 @@ function AutoPlayVideo({ src, poster, className, style, children, overlay = true
         )}
       </AnimatePresence>
 
-      {/* Mute toggle — bottom right */}
+      {/* Mute toggle - bottom right */}
       <button
         onClick={toggleMute}
         className="absolute bottom-4 right-4 z-10 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-black/60 transition-all duration-200"
@@ -202,9 +202,9 @@ const PROJECTS = [
     id: 1, status: "Active", color: "#059669", bg: "#f0fdf4", border: "#bbf7d0",
     title: "Operation AwareNorth",
     location: "Abuja & Kaduna, Nigeria",
-    date: "Jan 2024 – Dec 2024",
+    date: "Jan 2024 to Dec 2024",
     icon: Microscope,
-    desc: "A 12-month mass cancer literacy campaign targeting northern Nigerian states, deploying trained health educators into markets, schools, and mosques.",
+    desc: "A 12 month mass cancer literacy campaign targeting northern Nigerian states, deploying trained health educators into markets, schools, and mosques.",
     stats: [{ v:"1,200+", l:"Enrolled" }, { v:"6", l:"LGAs covered" }, { v:"82%", l:"Awareness lift" }],
     img: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=800&q=80",
     tags: ["Education","Community"],
@@ -213,20 +213,20 @@ const PROJECTS = [
     id: 2, status: "Active", color: "#0284c7", bg: "#eff6ff", border: "#bfdbfe",
     title: "Mobile Mammography Drive",
     location: "Lagos, Ogun, Oyo States",
-    date: "Mar 2024 – Feb 2025",
+    date: "Mar 2024 to Feb 2025",
     icon: Heart,
-    desc: "A fleet of three mobile mammography units conducting free breast cancer screenings in underserved peri-urban and rural communities across south-west Nigeria.",
+    desc: "A fleet of three mobile mammography units conducting free breast cancer screenings in underserved peri urban and rural communities across south west Nigeria.",
     stats: [{ v:"890+", l:"Screened" }, { v:"34", l:"Referrals" }, { v:"3", l:"Mobile units" }],
     img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80",
     tags: ["Screening","Women's Health"],
   },
   {
     id: 3, status: "Completed", color: "#7c3aed", bg: "#f5f3ff", border: "#ddd6fe",
-    title: "Navigator Pilot — Ibadan",
+    title: "Navigator Pilot, Ibadan",
     location: "Ibadan, Oyo State",
-    date: "Jan 2023 – Dec 2023",
+    date: "Jan 2023 to Dec 2023",
     icon: Users,
-    desc: "A 12-month patient navigation pilot connecting newly diagnosed cancer patients to specialist oncologists, reducing time-to-treatment by 64%.",
+    desc: "A 12 month patient navigation pilot connecting newly diagnosed cancer patients to specialist oncologists, reducing time to treatment by 64%.",
     stats: [{ v:"78", l:"Patients navigated" }, { v:"64%", l:"Faster treatment" }, { v:"91%", l:"Satisfaction" }],
     img: "https://images.unsplash.com/photo-1573164574511-73c773193279?w=800&q=80",
     tags: ["Navigation","Pilot"],
@@ -235,9 +235,9 @@ const PROJECTS = [
     id: 4, status: "Completed", color: "#0891b2", bg: "#ecfeff", border: "#a5f3fc",
     title: "Schools Awareness Tour",
     location: "FCT & Plateau State",
-    date: "Sep 2022 – Jun 2023",
+    date: "Sep 2022 to Jun 2023",
     icon: Globe2,
-    desc: "Visiting 40 secondary schools with age-appropriate cancer awareness curricula, training teachers and distributing resource packs.",
+    desc: "Visiting 40 secondary schools with age appropriate cancer awareness curricula, training teachers and distributing resource packs.",
     stats: [{ v:"40", l:"Schools" }, { v:"8,200", l:"Students" }, { v:"120", l:"Teachers trained" }],
     img: "https://images.unsplash.com/photo-1509099652299-6f8a2e2c8082?w=800&q=80",
     tags: ["Youth","Education"],
@@ -246,7 +246,7 @@ const PROJECTS = [
     id: 5, status: "Upcoming", color: "#f59e0b", bg: "#fffbeb", border: "#fde68a",
     title: "East Africa Expansion",
     location: "Nairobi, Kampala, Dar es Salaam",
-    date: "Q1 2025 – Q4 2026",
+    date: "Q1 2025 to Q4 2026",
     icon: Globe2,
     desc: "Scaling NCC's proven education and screening model to Kenya, Uganda, and Tanzania in partnership with three local health NGOs.",
     stats: [{ v:"3", l:"Countries" }, { v:"50,000+", l:"Target reach" }, { v:"2025", l:"Launch year" }],
@@ -257,7 +257,7 @@ const PROJECTS = [
     id: 6, status: "Upcoming", color: "#dc2626", bg: "#fef2f2", border: "#fecaca",
     title: "Cervical Cancer Initiative",
     location: "Rural Niger, Benue & Cross River",
-    date: "Q2 2025 – Q4 2025",
+    date: "Q2 2025 to Q4 2025",
     icon: Microscope,
     desc: "A focused cervical cancer screening and HPV education push targeting three Nigerian states with the highest incidence rates and least healthcare access.",
     stats: [{ v:"5,000+", l:"Target screens" }, { v:"3", l:"Focus states" }, { v:"HPV", l:"Education track" }],
@@ -271,7 +271,7 @@ const VIDEOS = [
   {
     src:    "https://www.w3schools.com/html/mov_bbb.mp4",
     poster: "https://images.unsplash.com/photo-1573164574511-73c773193279?w=900&q=80",
-    title:  "Mobile Clinic — Ibadan Day 1",
+    title:  "Mobile Clinic, Ibadan Day 1",
     location: "Ibadan, Oyo State",
     date:   "March 2024",
     tag:    "Screening Drive",
@@ -280,7 +280,7 @@ const VIDEOS = [
   {
     src:    "https://www.w3schools.com/html/movie.mp4",
     poster: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=900&q=80",
-    title:  "Community Outreach — Abuja Markets",
+    title:  "Community Outreach, Abuja Markets",
     location: "Wuse Market, Abuja",
     date:   "February 2024",
     tag:    "Education",
@@ -289,7 +289,7 @@ const VIDEOS = [
   {
     src:    "https://www.w3schools.com/html/mov_bbb.mp4",
     poster: "https://images.unsplash.com/photo-1509099652299-6f8a2e2c8082?w=900&q=80",
-    title:  "Schools Awareness Tour — Plateau State",
+    title:  "Schools Awareness Tour, Plateau State",
     location: "Jos, Plateau State",
     date:   "November 2023",
     tag:    "Youth",
@@ -404,7 +404,7 @@ function ProjectsHero() {
             className="text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
             style={M}
           >
-            Bringing life-saving cancer education, early detection, and community care directly to
+            Bringing lifesaving cancer education, early detection, and community care directly to
             underserved neighbourhoods across Nigeria through meaningful project partnerships.
           </motion.p>
 
@@ -596,7 +596,7 @@ function ProjectsGrid() {
 }
 
 /* ──────────────────────────────────────────────────
-   FEATURED PROJECT  — full-width with video
+   FEATURED PROJECT  - full-width with video
 ────────────────────────────────────────────────── */
 function FeaturedProject() {
   const ref = useRef(null);
@@ -630,7 +630,7 @@ function FeaturedProject() {
                 </span>
                 <p className="text-[15px] font-black text-white leading-snug"
                   style={{ ...M,letterSpacing:"-0.01em" }}>
-                  Mobile Mammography Drive — Lagos
+                  Mobile Mammography Drive, Lagos
                 </p>
               </div>
             </AutoPlayVideo>
@@ -651,8 +651,8 @@ function FeaturedProject() {
                 <span style={{ color:"#0284c7" }}>reaching the unreachable.</span>
               </h2>
               <p className="text-[14.5px] text-slate-500 leading-[1.8]" style={M}>
-                Three custom-fitted mobile mammography units are currently active across Lagos, Ogun,
-                and Oyo states — bringing clinical-grade breast cancer screening to communities
+                Three custom fitted mobile mammography units are currently active across Lagos, Ogun,
+                and Oyo states, bringing clinical grade breast cancer screening to communities
                 that have never had access before. Since March 2024, we've screened 890+ women
                 and generated 34 specialist referrals.
               </p>
@@ -688,7 +688,7 @@ function FeaturedProject() {
 }
 
 /* ──────────────────────────────────────────────────
-   VIDEO SHOWCASE  — 3 auto-play-on-scroll videos
+   VIDEO SHOWCASE  - 3 auto-play-on-scroll videos
 ────────────────────────────────────────────────── */
 function VideoShowcase() {
   const ref = useRef(null);

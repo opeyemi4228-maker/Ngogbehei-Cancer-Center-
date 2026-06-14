@@ -3,7 +3,7 @@
 /**
  * @file DiscoverSection.jsx
  * @project Ngogbehei Cancer Center
- * @description "Discover NCC" section — editorial intro + 4 image cards.
+ * @description "Discover NCC" section - editorial intro + 4 image cards.
  */
 
 import Link from "next/link";
@@ -43,7 +43,7 @@ const CARDS = [
     id: "outreach",
     category: "Community Outreach",
     headline:
-      "Cancer education that reaches every corner of Nigeria — in local languages.",
+      "Cancer education that reaches every corner of Nigeria, in local languages.",
     href: "/services/outreach",
     img: FP3,
     alt: "African NCC community health workers engaging with rural Nigerian residents",
@@ -52,7 +52,7 @@ const CARDS = [
     id: "impact",
     category: "Our Impact",
     headline:
-      "Measurable outcomes across Nigeria and West Africa — and counting.",
+      "Measurable outcomes across Nigeria and West Africa, and counting.",
     href: "/impact",
     img: FP4,
     alt: "Ngogbehei Cancer Center impact across Nigerian communities",
@@ -66,7 +66,7 @@ function StructuredData() {
     "@type": "ItemList",
     name: "Discover Ngogbehei Cancer Center",
     description:
-      "Key programmes and impact areas of the Ngogbehei Cancer Center — free screening, patient navigation, community outreach, and impact reporting.",
+      "Key programmes and impact areas of the Ngogbehei Cancer Center: free screening, patient navigation, community outreach, and impact reporting.",
     numberOfItems: CARDS.length,
     itemListElement: CARDS.map((card, i) => ({
       "@type": "ListItem",
@@ -240,7 +240,7 @@ export default function DiscoverSection() {
               className="font-montserrat font-normal text-[#0A2240] leading-[1.25] max-w-[720px]"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)" }}
             >
-              Bridging the gap between cancer awareness and care — delivering
+              Bridging the gap between cancer awareness and care, delivering
               free screening, education, and support to{" "}
               <em className="not-italic font-bold text-[#F5C300]">
                 every community
@@ -267,7 +267,7 @@ export default function DiscoverSection() {
             className="mt-14 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
           >
             <p className="font-montserrat text-[14.5px] text-[#6B7280] max-w-[480px] leading-relaxed">
-              From Abuja and Lagos to Port Harcourt and Kano — Ngogbehei Cancer
+              From Abuja and Lagos to Port Harcourt and Kano, Ngogbehei Cancer
               Center is wherever Nigerians need cancer care most.
             </p>
 

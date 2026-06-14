@@ -3,9 +3,8 @@
 /**
  * @file StorySection.jsx
  * @project Ngogbehei Cancer Center
- * @description Editorial bento grid of NCC stories + survivor pull quote.
+ * @description Editorial bento grid of NCC stories.
  *   • 3 stories (founder, community, survivor)
- *   • Pull quote from Amina T. (NCC programme 2024)
  *   • Full Montserrat typography, semantic <article>, a11y
  */
 
@@ -13,7 +12,7 @@ import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { Play, ArrowUpRight, Quote, ChevronRight, X } from "lucide-react";
+import { Play, ArrowUpRight, ChevronRight, X } from "lucide-react";
 import FP1 from "@/assets/FP1.jpg";
 import FP2 from "@/assets/FP2.jpg";
 import FP3 from "@/assets/FP3.jpg";
@@ -23,7 +22,7 @@ const STORIES = [
     id: 1,
     tag: "Founder Story",
     headline:
-      "The mission Marcel Ngogbehei started — and why it can't stop now.",
+      "The mission Marcel Ngogbehei started and why it can't stop now.",
     img:
       FP1, // "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=85",
     href: "/story/founder",
@@ -90,7 +89,7 @@ function VideoModal({ open, onClose }) {
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white/60">
             <Play size={28} aria-hidden="true" />
             <p className="font-montserrat text-sm">
-              Our story video — coming soon
+              Our story video, coming soon
             </p>
           </div>
         </div>
@@ -227,7 +226,7 @@ export default function StorySection() {
 
           {/* Bento grid */}
           <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-4 mb-12">
-            {/* Left — large hero */}
+            {/* Left - large hero */}
             <motion.article
               initial={{ opacity: 0, x: -24 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -314,7 +313,7 @@ export default function StorySection() {
               </button>
             </motion.article>
 
-            {/* Right — two stacked */}
+            {/* Right - two stacked */}
             <div className="flex flex-col gap-4">
               {STORIES.slice(1).map((s, i) => (
                 <motion.article
@@ -374,66 +373,6 @@ export default function StorySection() {
               ))}
             </div>
           </div>
-
-          {/* Pull quote */}
-          <motion.figure
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.55, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="relative overflow-hidden rounded-2xl px-8 sm:px-12 py-8"
-            style={{
-              background: "linear-gradient(135deg,#f0fdf4,#ecfdf5 50%,#f0fdf4)",
-            }}
-          >
-            <Quote
-              size={64}
-              aria-hidden="true"
-              className="absolute top-4 right-8 text-emerald-100"
-              strokeWidth={1}
-            />
-
-            <div className="relative z-10 flex flex-col sm:flex-row sm:items-center gap-6">
-              <div className="flex-1">
-                <blockquote
-                  className="font-montserrat text-xl sm:text-2xl font-black text-slate-900 leading-snug mb-3"
-                  style={{ letterSpacing: "-0.02em" }}
-                >
-                  &ldquo;When they told me it was caught early, I cried — not
-                  from fear, but from relief. The NCC team was there every step
-                  of the way.&rdquo;
-                </blockquote>
-                <figcaption className="flex items-center gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white font-montserrat text-xs font-black"
-                  >
-                    A
-                  </span>
-                  <div>
-                    <p className="font-montserrat text-sm font-black text-slate-800">
-                      Amina T., Lagos
-                    </p>
-                    <p className="font-montserrat text-xs text-slate-400 font-semibold">
-                      Cancer Survivor · NCC Programme 2024
-                    </p>
-                  </div>
-                </figcaption>
-              </div>
-              <motion.a
-                href="/stories"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-montserrat text-sm font-black text-white flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-                style={{
-                  background: "linear-gradient(135deg,#047857,#059669)",
-                  boxShadow: "0 8px 24px rgba(5,150,105,0.25)",
-                }}
-              >
-                More Stories
-                <ArrowUpRight size={14} aria-hidden="true" />
-              </motion.a>
-            </div>
-          </motion.figure>
 
           <motion.div
             aria-hidden="true"

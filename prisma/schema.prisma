@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  reason    String?
+  message   String
+  createdAt DateTime @default(now())
+
+  @@map("contacts")
+}
+
+model Volunteer {
+  id           String   @id @default(cuid())
+  name         String
+  email        String
+  phone        String?
+  location     String
+  pathway      String
+  availability String?
+  skills       String?
+  why          String
+  over18       Boolean  @default(true)
+  consent      Boolean  @default(true)
+  createdAt    DateTime @default(now())
+
+  @@map("volunteers")
+}
+
+model Donation {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  amount    Float
+  currency  String
+  frequency String
+  dedicate  Boolean  @default(false)
+  dedicatee String?
+  createdAt DateTime @default(now())
+
+  @@map("donations")
+}
+
+model Newsletter {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String
+  phone     String?
+  message   String?
+  createdAt DateTime @default(now())
+
+  @@map("newsletter")
+}

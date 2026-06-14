@@ -2,7 +2,7 @@
 
 /**
  * @file app/impact/page.jsx
- * @project Ngogbehei Cancer Center — Impact Page
+ * @project Ngogbehei Cancer Center - Impact Page
  */
 
 import { useRef, useEffect, useState } from "react";
@@ -55,7 +55,7 @@ function ImpactSchema() {
       {
         "@type": "WebPage",
         "@id": `${SITE_URL}/impact`,
-        name: "Our Impact — Ngogbehei Cancer Center",
+        name: "Our Impact | Ngogbehei Cancer Center",
         description:
           "Ngogbehei Cancer Center has educated 3,400+ people, conducted 890+ free cancer screenings, and navigated 210+ patients to care across 5 African nations.",
         url: `${SITE_URL}/impact`,
@@ -401,7 +401,7 @@ function ImpactHero() {
             transition={{ delay: 0.44, duration: 0.7 }}
             className="font-montserrat text-[15px] sm:text-base text-white/90 leading-[1.75] mb-10 max-w-lg"
           >
-            Since 2021, every statistic we publish represents a real person —
+            Since 2021, every statistic we publish represents a real person -
             educated, screened, guided to care, or given a fighting chance at
             life.
           </motion.p>
@@ -452,7 +452,7 @@ const STATS = [
   { num: 890, suf: "+", label: "Free Screenings", sub: "Conducted to date" },
   { num: 210, suf: "+", label: "Patients Supported", sub: "Through navigation" },
   { num: 12, suf: "+", label: "Communities", sub: "Directly reached" },
-  { num: 100, suf: "%", label: "Nonprofit", sub: "UK-registered charity" },
+  { num: 100, suf: "%", label: "Nonprofit", sub: "UK registered charity" },
 ];
 
 function StatsRow() {
@@ -552,7 +552,7 @@ const PILLARS = [
     color: "#059669",
     icon: Users,
     title: "Community Education & Awareness",
-    desc: "Workshops in schools, churches, and community centres covering cancer symptoms, risk factors, myths, and lifestyle changes — in local languages and culturally relevant formats.",
+    desc: "Workshops in schools, churches, and community centres covering cancer symptoms, risk factors, myths, and lifestyle changes, in local languages and culturally relevant formats.",
     stat: "3,400+",
     statLbl: "Individuals reached",
     progress: 34,
@@ -563,7 +563,7 @@ const PILLARS = [
     color: "#0284c7",
     icon: Microscope,
     title: "Screening & Early Detection",
-    desc: "Mobile screening units and pop-up clinics bringing breast, cervical, and prostate screenings directly into rural and peri-urban communities. We train health volunteers in referral processes.",
+    desc: "Mobile screening units and pop up clinics bringing breast, cervical, and prostate screenings directly into rural and peri urban communities. We train health volunteers in referral processes.",
     stat: "890+",
     statLbl: "Free screenings",
     progress: 29,
@@ -574,7 +574,7 @@ const PILLARS = [
     color: "#7c3aed",
     icon: Heart,
     title: "Access to Care & Navigation",
-    desc: "We walk beside every patient after diagnosis — connecting them to hospitals, specialists, and treatment. Micro-grants and transport support ensure poverty is never a barrier to survival.",
+    desc: "We walk beside every patient after diagnosis, connecting them to hospitals, specialists, and treatment. Micro grants and transport support ensure poverty is never a barrier to survival.",
     stat: "210+",
     statLbl: "Patients guided",
     progress: 42,
@@ -585,7 +585,7 @@ const PILLARS = [
     color: "#0891b2",
     icon: Globe2,
     title: "Survivor & Caregiver Support",
-    desc: "Peer support groups for cancer survivors and caregivers, mental health and wellness programmes post-diagnosis, and survivor story campaigns that reduce stigma and inspire early action.",
+    desc: "Peer support groups for cancer survivors and caregivers, mental health and wellness programmes post diagnosis, and survivor story campaigns that reduce stigma and inspire early action.",
     stat: "5+",
     statLbl: "Nations active",
     progress: 50,
@@ -637,7 +637,7 @@ function ImpactPillars() {
             className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-xs"
           >
             Everything NCC does flows from one belief: early action saves
-            lives — and no rural community should be left behind.
+            lives, and no rural community should be left behind.
           </motion.p>
         </div>
 
@@ -746,7 +746,7 @@ const STORIES = [
     tag: "Survivors",
     tagColor: "#7c3aed",
     title: "She had never heard the word \u201Cmammogram.\u201D",
-    desc: "A first-generation survivor story from Abuja — caught at Stage 1 because of an NCC screening drive that came directly to her village.",
+    desc: "A first generation survivor story from Abuja, caught at Stage 1 because of an NCC screening drive that came directly to her village.",
     img: M2,
     imgAlt: "African cancer survivor sharing her story after early detection through NCC programme",
     stat: "210+ Guided",
@@ -756,7 +756,7 @@ const STORIES = [
     tag: "Partnerships",
     tagColor: "#0284c7",
     title: "Building cancer protocols for Africa.",
-    desc: "Formal collaborations with NHS charity partners and leading universities to build evidence-based treatment frameworks suited to Nigeria's healthcare landscape.",
+    desc: "Formal collaborations with NHS charity partners and leading universities to build evidence based treatment frameworks suited to Nigeria's healthcare landscape.",
     img: M3,
     imgAlt: "African healthcare professionals collaborating on cancer research partnership with NCC",
     stat: "Active partners",
@@ -912,7 +912,7 @@ const TIMELINE = [
     year: "2021",
     color: "#F5C300",
     title: "NCC Founded",
-    desc: "UK-registered nonprofit launched after a deeply personal encounter with the devastating cost of late-stage cancer diagnosis in Africa.",
+    desc: "UK registered nonprofit launched after a deeply personal encounter with the devastating cost of late stage cancer diagnosis in Africa.",
   },
   {
     year: "2022",
@@ -924,7 +924,7 @@ const TIMELINE = [
     year: "2022",
     color: "#0284c7",
     title: "Free Screenings Begin",
-    desc: "Mobile screening unit deployed — 150 free breast and cervical screenings conducted in communities with no prior access.",
+    desc: "Mobile screening unit deployed - 150 free breast and cervical screenings conducted in communities with no prior access.",
   },
   {
     year: "2023",
@@ -936,7 +936,7 @@ const TIMELINE = [
     year: "2023",
     color: "#0891b2",
     title: "5-Nation Expansion",
-    desc: "NCC operations extended into Ghana, Cameroon, Kenya, and South Africa — bringing education and screening to new communities.",
+    desc: "NCC operations extended into Ghana, Cameroon, Kenya, and South Africa, bringing education and screening to new communities.",
   },
   {
     year: "2024",
@@ -990,7 +990,7 @@ function Timeline() {
               transition={{ delay: 0.16 }}
               className="font-montserrat text-[15px] text-slate-500 leading-relaxed mt-4 max-w-[220px]"
             >
-              From a single community programme in Lagos to five nations — three
+              From a single community programme in Lagos to five nations, three
               years of relentless effort.
             </motion.p>
           </div>
@@ -1091,8 +1091,8 @@ function ReportCard() {
             <p className="font-montserrat text-[16px] text-slate-500 leading-relaxed max-w-lg">
               Over 3,400 people educated, 890+ free screenings conducted, and
               210+ patients supported across five African nations. Full data,
-              survivor stories, financial transparency, and our 12-month
-              roadmap — all in one document.
+              survivor stories, financial transparency, and our 12 month
+              roadmap, all in one document.
             </p>
             <ul className="flex flex-wrap items-center gap-6 mt-5 list-none p-0">
               {[
@@ -1175,7 +1175,7 @@ function Testimonial() {
               style={{ letterSpacing: "-0.025em" }}
             >
               &ldquo;When they told me it was caught early, I didn&apos;t cry
-              from fear — I cried from relief. The NCC team was there every
+              from fear, I cried from relief. The NCC team was there every
               single step of the way.&rdquo;
             </p>
           </blockquote>
@@ -1269,7 +1269,7 @@ function CTABanner() {
             >
               Don&apos;t just read
               <br />
-              our numbers —
+              our numbers -
               <br />
               <span style={{ color: "#F5C300" }}>help change them.</span>
             </motion.h2>
@@ -1281,7 +1281,7 @@ function CTABanner() {
               className="font-montserrat text-[16px] text-white/85 leading-relaxed max-w-md"
             >
               Every donation, every volunteer hour, every shared story moves us
-              closer to 10,000 lives reached. Because knowledge saves lives —
+              closer to 10,000 lives reached. Because knowledge saves lives -
               and action changes futures.
             </motion.p>
           </div>

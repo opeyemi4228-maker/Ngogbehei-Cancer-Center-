@@ -183,8 +183,16 @@ function ContactForm({ iv }) {
     }
     setErrors({});
     setStatus("loading");
-    await new Promise((r) => setTimeout(r, 1400));
-    setStatus("success");
+    const res = await fetch("/api/newsletter", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, message: form.message }),
+    });
+    if (res.ok) {
+      setStatus("success");
+    } else {
+      setStatus("idle");
+    }
   };
 
   if (status === "success") {
@@ -379,14 +387,14 @@ export default function ContactSection() {
             {...fw(0.14)}
             className="font-montserrat text-[14px] text-slate-500 leading-relaxed max-w-sm"
           >
-            Donor, partner, patient, or volunteer — share your message and
+            Donor, partner, patient, or volunteer: share your message and
             we&apos;ll reply within 24 hours.
           </motion.p>
         </div>
 
         {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-6 items-stretch">
-          {/* Photo card — uses Next.js Image with fill */}
+          {/* Photo card - uses Next.js Image with fill */}
           <motion.aside
             {...fw(0.06)}
             aria-label="NCC community impact"
@@ -542,7 +550,7 @@ export default function ContactSection() {
                         Call
                       </span>
                       <span className="font-montserrat text-[13px] font-black text-white group-hover:text-emerald-400 transition-colors">
-                        +234-800-NCC-CARE
+                        +234 800 NCC CARE
                       </span>
                     </span>
                   </a>

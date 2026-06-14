@@ -7,7 +7,7 @@
  *
  * Features
  * ─────────────────────────────────────────────────────────────
- *   • Yellow announcement banner — typewriter intro → auto carousel
+ *   • Yellow announcement banner - typewriter intro → auto carousel
  *   • Scroll-aware header (transparent on hero → solid white on scroll)
  *   • Full-width mega menus (route-only, no fabricated pages)
  *   • Logo + nav text adapt to scroll state
@@ -64,9 +64,9 @@ const HEADER_H = 64;
 
 /* ─── banner messages ────────────────────────────────────── */
 const BANNER_MSGS = [
-  "Free cancer screening every Saturday in Abuja — No appointment needed.",
-  "Our patient navigation team is available 24/7. Call +234-800-NCC-CARE.",
-  "New: Breast cancer awareness workshop — Register at ngogbeheicc.org.",
+  "Free cancer screening every Saturday in Abuja. No appointment needed.",
+  "Our patient navigation team is available 24/7. Call +234 800 NCC CARE.",
+  "New: Breast cancer awareness workshop. Register at ngogbeheicc.org.",
   "All donations matched up to ₦5M through December 2025. Give today.",
   "Early detection saves lives. Book your free screening now.",
 ];
@@ -250,7 +250,7 @@ function Logo({ scrolled }) {
   return (
     <Link
       href="/"
-      aria-label="Ngogbehei Cancer Center — Home"
+      aria-label="Ngogbehei Cancer Center - Home"
       className="flex items-center group shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-lg font-montserrat"
     >
       <div className="flex items-center gap-2.5 px-3 py-1.5">
@@ -698,7 +698,7 @@ function MobileDrawer({ open, onClose }) {
                   style={{ color: "#F5C300", flexShrink: 0 }}
                   aria-hidden="true"
                 />
-                +234-800-NCC-CARE
+                +234 800 NCC CARE
               </a>
               <a
                 href="mailto:info@ngogbeheicc.org"

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.8.0",
     "next": "^15.5.15",
+    "prisma": "^5.22.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.1",
     "react-icons": "^5.6.0",
+    "resend": "^6.12.4",
     "update": "^0.7.4"
   },
   "devDependencies": {

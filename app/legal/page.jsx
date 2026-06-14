@@ -65,7 +65,7 @@ const SECTIONS = [
     label: "Accessibility",
     Icon: Accessibility,
     eyebrow: "Section 03",
-    summary: "Our commitment to an inclusive, barrier-free digital experience.",
+    summary: "Our commitment to an inclusive, barrier free digital experience.",
   },
   {
     slug: "transparency",
@@ -84,7 +84,7 @@ function LegalSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Legal — Ngogbehei Cancer Center",
+    name: "Legal | Ngogbehei Cancer Center",
     url: `${SITE_URL}/legal`,
     description:
       "Privacy Policy, Terms of Use, Accessibility statement, and Transparency commitments for the Ngogbehei Cancer Center.",
@@ -447,21 +447,21 @@ function PrivacyBlock() {
       </p>
       <ul>
         <li>
-          <strong>Contact details</strong> — name, email, phone number, and
+          <strong>Contact details</strong>: name, email, phone number, and
           mailing address provided through our forms (newsletter, contact,
           donation, volunteer, partner enquiry).
         </li>
         <li>
-          <strong>Donation information</strong> — gift amount, frequency, and
+          <strong>Donation information</strong>: gift amount, frequency, and
           payment confirmation handled by our regulated payment partners. We
           do not store full card numbers on our servers.
         </li>
         <li>
-          <strong>Programme participation data</strong> — anonymised
+          <strong>Programme participation data</strong>: anonymised
           attendance and screening counts used to report on impact.
         </li>
         <li>
-          <strong>Technical data</strong> — IP address, browser type, pages
+          <strong>Technical data</strong>: IP address, browser type, pages
           viewed, and time on page for analytics and security.
         </li>
       </ul>
@@ -470,7 +470,7 @@ function PrivacyBlock() {
       <p>
         We use your data to deliver services you have requested, send
         communications you have opted in to, comply with our legal and
-        accounting obligations as a UK-registered nonprofit, and improve our
+        accounting obligations as a UK registered nonprofit, and improve our
         programmes. We do{" "}
         <strong>not sell, rent, or trade your personal information</strong>{" "}
         to anyone, ever.
@@ -487,8 +487,8 @@ function PrivacyBlock() {
 
       <h3>4. Sharing &amp; processors</h3>
       <p>
-        We share data only with vetted processors who help us run NCC —
-        payment platforms, email-delivery services, analytics, and cloud
+        We share data only with vetted processors who help us run NCC -
+        payment platforms, email delivery services, analytics, and cloud
         hosting. Each is bound by a data-processing agreement. We may also
         disclose information where required by law.
       </p>
@@ -527,7 +527,7 @@ function PrivacyBlock() {
       <p>
         Our site uses essential cookies for security and optional analytics
         cookies that help us understand how visitors use the site. You can
-        accept or decline non-essential cookies through the banner shown on
+        accept or decline non essential cookies through the banner shown on
         your first visit.
       </p>
 
@@ -561,7 +561,7 @@ function TermsBlock() {
       <p>
         This website is operated by the Marcel Ngogbehei Center for Cancer
         Education &amp; Care (&ldquo;NCC&rdquo;, &ldquo;we&rdquo;,
-        &ldquo;us&rdquo;), a UK-registered nonprofit. By using the site you
+        &ldquo;us&rdquo;), a UK registered nonprofit. By using the site you
         accept these terms. If you don&apos;t accept them, please don&apos;t
         use the site.
       </p>
@@ -599,7 +599,7 @@ function TermsBlock() {
       <p>
         All donations made through this site are processed by regulated
         payment partners. Donations are voluntary and, except where required
-        by law, non-refundable. We will issue a digital receipt. If a
+        by law, non refundable. We will issue a digital receipt. If a
         donation is made in error, contact{" "}
         <a href="mailto:info@ngogbeheicc.org">info@ngogbeheicc.org</a> within
         14 days.
@@ -616,14 +616,14 @@ function TermsBlock() {
 
       <h3>6. Intellectual property</h3>
       <p>
-        All content on this site — text, graphics, logos, photographs, and
-        downloadable resources — is owned by or licensed to NCC and
+        All content on this site, including text, graphics, logos, photographs, and
+        downloadable resources, is owned by or licensed to NCC and
         protected by copyright. The Ngogbehei Cancer Center name, logo, and
         related marks are our property and may not be used without
         permission.
       </p>
 
-      <h3>7. Third-party links</h3>
+      <h3>7. Third party links</h3>
       <p>
         The site may link to external pages (partner organisations, news
         articles, social platforms). We are not responsible for the content
@@ -650,8 +650,8 @@ function TermsBlock() {
       <h3>10. Governing law</h3>
       <p>
         These terms are governed by the laws of England and Wales. Any
-        dispute will be subject to the non-exclusive jurisdiction of the
-        English courts, without prejudice to mandatory consumer-protection
+        dispute will be subject to the non exclusive jurisdiction of the
+        English courts, without prejudice to mandatory consumer protection
         rights you may have in your country of residence.
       </p>
 
@@ -671,7 +671,7 @@ function AccessibilityBlock() {
       id="accessibility"
       eyebrow="Section 03 · Accessibility"
       title="A digital experience that works for everyone."
-      lead="NCC believes that access to cancer information is a human right — and that includes access to this website. We design and maintain ngogbeheicc.org to be usable by people with the widest possible range of abilities."
+      lead="NCC believes that access to cancer information is a human right, and that includes access to this website. We design and maintain ngogbeheicc.org to be usable by people with the widest possible range of abilities."
     >
       <h3>1. Our standard</h3>
       <p>
@@ -686,7 +686,7 @@ function AccessibilityBlock() {
       <h3>2. What we&apos;ve done</h3>
       <ul>
         <li>
-          Semantic HTML throughout — proper headings, landmarks, lists, and
+          Semantic HTML throughout: proper headings, landmarks, lists, and
           form labels
         </li>
         <li>
@@ -702,7 +702,7 @@ function AccessibilityBlock() {
           and UI controls
         </li>
         <li>
-          Skip-to-content link, ARIA roles on menus and dialogs, and
+          Skip to content link, ARIA roles on menus and dialogs, and
           consistent navigation
         </li>
         <li>
@@ -715,7 +715,7 @@ function AccessibilityBlock() {
 
       <h3>3. Known limitations</h3>
       <p>
-        Some embedded third-party content (donation widgets, social embeds)
+        Some embedded third party content (donation widgets, social embeds)
         may not yet meet our internal standard. We are actively working with
         each partner to close these gaps and welcome feedback on any barrier
         you encounter.
@@ -724,8 +724,8 @@ function AccessibilityBlock() {
       <h3>4. Assistive technology</h3>
       <p>
         The site is tested with the latest versions of major screen readers
-        (NVDA, JAWS, VoiceOver, TalkBack), keyboard-only navigation, and
-        high-contrast modes. If a tool you rely on doesn&apos;t work as
+        (NVDA, JAWS, VoiceOver, TalkBack), keyboard only navigation, and
+        high contrast modes. If a tool you rely on doesn&apos;t work as
         expected, please tell us.
       </p>
 
@@ -740,19 +740,19 @@ function AccessibilityBlock() {
           Email:{" "}
           <a href="mailto:info@ngogbeheicc.org">info@ngogbeheicc.org</a>
         </li>
-        <li>Phone: +234-800-NCC-CARE</li>
+        <li>Phone: +234 800 NCC CARE</li>
       </ul>
 
       <h3>6. Alternatives</h3>
       <p>
         If you cannot access information on this site, we are happy to
-        provide it in another format — large print, plain text, or a
-        verbal walkthrough by phone — at no cost to you.
+        provide it in another format: large print, plain text, or a
+        verbal walkthrough by phone, at no cost to you.
       </p>
 
       <h3>7. Continuous improvement</h3>
       <p>
-        Accessibility is not a one-time project. We audit the site at least
+        Accessibility is not a one time project. We audit the site at least
         annually, train our content team on inclusive practices, and
         prioritise accessibility fixes in every release.
       </p>
@@ -766,7 +766,7 @@ function TransparencyBlock() {
       id="transparency"
       eyebrow="Section 04 · Transparency"
       title="Where every Naira and Pound goes."
-      lead="As a UK-registered nonprofit operating across Africa, we hold ourselves to a higher standard of openness than the law requires. Trust isn't claimed — it's reported."
+      lead="As a UK registered nonprofit operating across Africa, we hold ourselves to a higher standard of openness than the law requires. Trust isn't claimed, it's reported."
     >
       <h3>1. Registration &amp; governance</h3>
       <p>
@@ -779,7 +779,7 @@ function TransparencyBlock() {
       <h3>2. How donations are used</h3>
       <p>
         We commit that{" "}
-        <strong>100% of donations fund our African programmes</strong> —
+        <strong>100% of donations fund our African programmes</strong> -
         cancer education, free screening, and patient navigation. Operating
         costs in the UK are covered separately by foundational grants and
         unrestricted gifts clearly designated for that purpose.
@@ -789,14 +789,14 @@ function TransparencyBlock() {
       </p>
       <ul>
         <li>
-          <strong>₦5,000</strong> — cancer awareness materials reaching 100
+          <strong>₦5,000</strong>: cancer awareness materials reaching 100
           people
         </li>
         <li>
-          <strong>₦25,000</strong> — free screening for 5 women
+          <strong>₦25,000</strong>: free screening for 5 women
         </li>
         <li>
-          <strong>₦100,000</strong> — a mobile clinic running for a full day
+          <strong>₦100,000</strong>: a mobile clinic running for a full day
         </li>
       </ul>
 
@@ -822,8 +822,8 @@ function TransparencyBlock() {
 
       <h3>4. Our partners</h3>
       <p>
-        We disclose our institutional partners — federal and state health
-        departments, universities, NGOs, and corporate CSR programmes — on
+        We disclose our institutional partners: federal and state health
+        departments, universities, NGOs, and corporate CSR programmes, on
         our partners page. Where a partnership involves a financial
         relationship, the nature of that relationship is summarised in the
         annual report.
@@ -848,8 +848,8 @@ function TransparencyBlock() {
 
       <h3>7. Whistleblowing</h3>
       <p>
-        We support and protect anyone — staff, volunteer, beneficiary, or
-        member of the public — who raises a concern in good faith about
+        We support and protect anyone, whether staff, volunteer, beneficiary, or
+        member of the public, who raises a concern in good faith about
         wrongdoing at NCC. All reports are investigated and the reporter is
         protected from retaliation.
       </p>
@@ -915,7 +915,7 @@ function ContactStrip() {
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-montserrat text-[13px] font-bold text-white border border-white/25 hover:bg-white/10 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
           >
             <Phone size={13} aria-hidden="true" />
-            +234-800-NCC-CARE
+            +234 800 NCC CARE
           </a>
         </address>
       </div>
@@ -962,7 +962,7 @@ export default function LegalPage() {
   const params = useParams();
   const pathname = usePathname();
 
-  /* Resolve the slug from the URL — catch-all gives an array */
+  /* Resolve the slug from the URL - catch-all gives an array */
   const rawSlug = Array.isArray(params?.section)
     ? params.section[0]
     : params?.section;

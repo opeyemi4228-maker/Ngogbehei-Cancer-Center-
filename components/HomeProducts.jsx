@@ -241,8 +241,8 @@ export default function WhoWeAre() {
   ];
 
   const pillars = [
-    { symbol: "◎", title: "Education", desc: "Community-led awareness programs that reach where hospitals cannot.", icon: Users },
-    { symbol: "◈", title: "Early Detection", desc: "Screening drives that turn late-stage diagnoses into survivable catches.", icon: Microscope },
+    { symbol: "◎", title: "Education", desc: "Community led awareness programs that reach where hospitals cannot.", icon: Users },
+    { symbol: "◈", title: "Early Detection", desc: "Screening drives that turn late stage diagnoses into survivable catches.", icon: Microscope },
     { symbol: "◉", title: "Access to Care", desc: "Bridging patients to treatment pathways regardless of geography or income.", icon: Heart },
   ];
 
@@ -411,7 +411,7 @@ export default function WhoWeAre() {
           <strong className="text-slate-700 font-semibold">
             Marcel Ngogbehei Center for Cancer Education &amp; Care (NCC)
           </strong>{" "}
-          is a UK-registered nonprofit — bridging the deadly gap between
+          is a UK registered nonprofit, bridging the deadly gap between
           awareness and access to care in underserved regions across Africa.
         </motion.p>
 
