@@ -18,7 +18,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import {
   FiArrowUpRight,
   FiMapPin,
@@ -60,8 +60,18 @@ const LEGAL_LINKS = [
 const SOCIAL_LINKS = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=61579123450452",
+    href: "https://www.facebook.com/share/1988x3EXqn/?mibextid=wwXIfr",
     Icon: FaFacebook,
+  },
+  {
+    label: "YouTube",
+    href: "https://youtube.com/@ngogbeheicancercenter?si=ucUrbtjbt8rkxaMC",
+    Icon: FaYoutube,
+  },
+  {
+    label: "X",
+    href: "https://x.com/ngogbeheicc?s=11",
+    Icon: FaXTwitter,
   },
 ];
 
@@ -508,7 +518,7 @@ export default function Footer() {
                   ))}
                 </ul>
                 <p className="mt-6 font-montserrat text-[11.5px] leading-[1.6] text-white/55">
-                  Follow us on Facebook for real impact and real stories.
+                  Follow us for real impact and real stories.
                 </p>
               </div>
             </div>
